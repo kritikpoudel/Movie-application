@@ -7,7 +7,7 @@ export default function Favorites() {
   if (favorites && favorites.length > 0){
     return(
       <div className="favorites">
-        <h1>Your Favorites Movies</h1>
+        <h1 className="text-3xl text-red-500 text-center mb-5">Your Favorite Movies</h1>
        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 gap-6 w-full box-border">
               {favorites.map(
                 (movie) =>
