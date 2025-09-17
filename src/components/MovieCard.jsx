@@ -19,7 +19,7 @@ export default function MovieCard({ movie }) {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col justify-end p-4 rounded-lg">
           <button className="absolute top-4 right-4 text-white text-xl p-2 bg-black/50 hover:bg-black/80 rounded-full w-10 h-10 flex items-center justify-center transition-colors duration-200 "  onClick={onFavoriteClick}>
-            🤍
+            {favorite ? "❤️" : "🤍"}
           </button>
         </div>
       </div>
